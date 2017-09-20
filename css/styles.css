@@ -1,0 +1,97 @@
+* {
+    /* include padding and borders when setting element widths */
+    box-sizing: border-box;
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #2312ca;
+    color: #FFF;
+    text-align: center;
+    line-height:  50px;
+    height: 50px;
+}
+body {
+    font-family: 
+    -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
+    'Helvetica Neue', sans-serif;
+}
+main {
+    margin-top: 50px;
+}
+header {
+    background-image: url(../img/header-background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.nav-link {
+    color: blue;
+}
+
+.nav-link:hover {
+    color: darkblue;
+}
+
+.fullpage {
+    display: flex;
+    /* vertically-center the child elements of the flexbox */
+    align-items: center;
+    /* horizontally-center the child elements as well */
+    justify-content: center;
+    /* make it 100% of the viewport height */
+    height: 100vh;
+    /* shade the background */
+    background-color: #CCC;
+    /* center align all text */
+    text-align: center;
+}
+
+.fullpage .content h4 {
+    font-weight: 100;
+    font-size: 5rem;
+}
+
+.container-example {
+    background-color: #DDD;
+}
+
+.card {
+    max-width: 350px;
+    margin-top: 1em;
+}
+
+@media (min-width: 768px) {
+    /* these rules apply only to screens 768 pixels and wider */
+    .mobile-call-icon {
+        display: none;
+    }
+
+    .phone-number {
+        display: inline;
+    }
+    
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .col {
+        flex-basis: 50%;
+    }
+    
+    .col-icons {
+        padding: 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col {
+        /* reset flex-basis to automatic sizing based on content */
+        flex-basis: auto;
+        flex-grow: 1;
+    }
+}

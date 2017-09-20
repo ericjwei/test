@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Eric Wei">
+    <meta name="description" content="test page">
+    <meta name="keywords" content="keywords">
+    <!-- Bootstrap css file -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- jQuery JavaScript library -->
+    <script defer src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <!-- popper.js JavaScript library -->
+    <script defer src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <!-- Bootstrap JavaScript library -->
+    <script defer src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/3cd7e4524d.js"></script>
+    <!-- normaliz.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <!-- our own stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Test Web Page</title>
+</head>
+<body>
+    <nav>Navigation Bar</nav>
+    <main>
+        <h1>Hello World!</h1>
+        <p>This is a paragraph.</p>
+        <h3>Images</h3>
+        <img src="path/to/my/image.png" alt="discriptive text for screen readers and indexers">
+        <h3>Lists</h3>
+        <ul>
+            <li>1 tablespoon of oil</li>
+            <li>1 onion diced</li>
+            <li>2 cloves of garlic</li>
+        </ul>
+        <h3>Orderd List</h3>
+        <ol>
+            <li>Heat the oil in the pan on medium high heat</li>
+            <li>Fre the onions until golden</li>
+            <li>Add the garlic and cook until fragrant, about 30 seconds</li>
+        </ol>
+        <h3>Dictionary</h3>
+        <dl>
+            <dt>Baguette with Butter</dt>
+            <dd>A toasted Grand Central baguette with salted butter</dd>
+            
+            <dt>Caesar Salad</dt>
+            <dd>Romaine leaves tossed with a zesty Caesar-style dressing</dd>
+        </dl>
+        <h3>Hyperlink</h3>
+        <a class="nav-link" href="https://google.com">Search on Google</a>
+        <p>For more detail see the <a href="#details">Details section</a> later in this document.</p>
+        <p>... more content</p>
+        <h3 id="details">Details</h3>
+        <p>.. more content</p>
+        <h3>Mail</h3>
+        <p>For more information <a href="mailto:informatics@uw.edu">contact us by email</a>.</p>
+        <h3>Phone</h3>
+        <p>For more information <a href="tel:+12065551212">give us a call!</a>.</p>
+        <div class="row">
+            <div class="col">
+                <h4>First Column</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, nihil? Fugit corporis dignissimos earum magnam pariatur quos id ducimus dolor! Laboriosam tempora repudiandae amet dolorum assumenda. Nam, animi doloremque. Inventore!</p>
+            </div>
+            <div class="col">
+                <h4>Second Column</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, nihil? Fugit corporis dignissimos earum magnam pariatur quos id ducimus dolor! Laboriosam tempora repudiandae amet dolorum assumenda. Nam, animi doloremque. Inventore!</p>
+            </div>
+            <div class="col">
+                <h4>Third Column</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, nihil? Fugit corporis dignissimos earum magnam pariatur quos id ducimus dolor! Laboriosam tempora repudiandae amet dolorum assumenda. Nam, animi doloremque. Inventore!</p>
+            </div>
+            <div class="col">
+                <h4>Fourth Column</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, nihil? Fugit corporis dignissimos earum magnam pariatur quos id ducimus dolor! Laboriosam tempora repudiandae amet dolorum assumenda. Nam, animi doloremque. Inventore!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h4>This Column Grows</h4>
+                <p>This Column will grow to fill all of the remaining row width, while the icon on the right will only consume as much width as it needs.</p>
+            </div>
+            <div class="col-icons">
+                <h4><i class="fa fa-home"></i></h4>
+            </div>
+        </div>
+        <section class="fullpage">
+            <div class="content">
+                <h4>Some Splashy Content</h4>
+                <p>......</p>
+            </div>
+        </section>
+        <section>
+            <p>Some more content you see when you scroll down</p>
+        </section>
+        <section class="container-example">
+            <div class="container">
+                <h4>Section Title</h4>
+                <p>Resize the browser window and notice how this content within the container is constrained in width on wider screens, but still has some padding on narrow screens.</p>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="card">
+                    <img src="http://via.placeholder.com/350x150" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">A Card Title</h4>
+                        <p class="card-text">Some card text that appears below the card title.</p>
+                        <a href="#" class="card-link btn btn-primary">Action Link 1</a>
+                        <a href="#" class="card-link btn btn-primary">Action Link 2</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    Launch demo modal
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tableindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="exampleModalLabel">Modal Title</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">Some content shown in the body of the modal.</div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
